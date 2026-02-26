@@ -49,11 +49,12 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<!-- <dependency>
+		<!-- MySQL driver - include when connecting to MySQL services -->
+		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
-		</dependency> -->
+		</dependency>
 		<dependency>
       		<groupId>org.postgresql</groupId>
       		<artifactId>postgresql</artifactId>
