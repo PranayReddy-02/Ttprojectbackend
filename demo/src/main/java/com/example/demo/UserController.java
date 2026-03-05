@@ -34,6 +34,12 @@ public class UserController {
         return (List<Users>) this.userRepo.findAll();
     }
 
+    // GET mapping added so browsers hitting /register don't get 405
+    @GetMapping("/register")
+    String registerInfo() {
+        return "Send a POST with JSON {\"email\":...,\"name\":...} to this endpoint to register.";
+    }
+
     @PostMapping("/register")
     public ResponseEntity<String> register (@RequestBody Users user)
     {
